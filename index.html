@@ -1,28 +1,143 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Playground</title>
-  <style>
-    body { font-family: sans-serif; padding: 20px; }
-    #output { margin-top: 20px; padding: 10px; background: #f0f0f0; }
-  </style>
-</head>
-<body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Планировщик задач и трекер привычек</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div>
+          <div class="eyebrow">Репозиторий</div>
+          <h1 class="hero-title">
+            Драйвовый код для жесткого планирования и трекера привычек
+          </h1>
+          <p class="hero-text">
+            Этот репозиторий показывает софт для ежедневного и еженедельного
+            планирования, мониторинга статуса задач и прогресса, с встроенным
+            трекером привычек и выразительным интерфейсом.
+          </p>
+          <div class="hero-actions">
+            <button class="button-primary">Открыть проект</button>
+            <button
+              class="button-secondary"
+              onclick="
+                window.open('https://github.com/fbitcpc/test-pages', '_blank')
+              "
+            >
+              Исследовать код
+            </button>
+          </div>
+        </div>
 
-<h1>Интерактивная тестовая площадка</h1>
+        <div class="hero-card">
+          <h2>Что внутри</h2>
+          <p>
+            Реактор задач, статусные панели, прогресс-бары и трекер привычек —
+            все объединено в темной и насыщенной стилистике, которая показывает,
+            что это продукт для серьезной работы.
+          </p>
+        </div>
+      </header>
 
-<input id="input" placeholder="Введите текст" />
-<button onclick="run()">Запустить</button>
+      <section class="features">
+        <div class="feature-card">
+          <h3>Ежедневный контроль</h3>
+          <p>
+            Планируйте день с точностью, ставьте приоритеты и держите каждый шаг
+            видимым.
+          </p>
+        </div>
 
-<div id="output"></div>
+        <div class="feature-card">
+          <h3>Недельная стратегия</h3>
+          <p>
+            Устанавливайте цели на неделю, отслеживайте статус задач и держите
+            прогресс под огнем.
+          </p>
+        </div>
 
-<script>
-function run() {
-  const value = document.getElementById('input').value;
-  document.getElementById('output').innerText = "Вы ввели: " + value;
-}
-</script>
+        <div class="feature-card">
+          <h3>Трекер привычек</h3>
+          <p>
+            Фиксируйте регулярные действия, превращайте повторения в результат и
+            не давайте мотивации упасть.
+          </p>
+        </div>
+      </section>
 
-</body>
+      <section class="metrics">
+        <div class="metric">
+          <strong>28+</strong>
+          <span>инструментов планирования</span>
+        </div>
+        <div class="metric">
+          <strong>4</strong>
+          <span>статуса задач</span>
+        </div>
+        <div class="metric">
+          <strong>7</strong>
+          <span>дней контроля</span>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery-header">
+          <div class="eyebrow accent">Галерея</div>
+          <div>
+            <h2>Визуальный стиль и профессиональная эстетика</h2>
+            <p>
+              Тематические стоковые изображения показывают атмосферу
+              продуктивного планирования, управления задачами и трекера
+              привычек.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="images/plan-desk.jpg"
+              alt="Рабочее место с планированием"
+            />
+            <figcaption>
+              Планирование задач и структурирование рабочего дня.
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/desk-overview.jpg"
+              alt="Рабочий стол с ноутбуком и заметками"
+            />
+            <figcaption>
+              Современный рабочий процесс и планирование целей.
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/calendar-notes.jpg"
+              alt="Календарь и заметки по привычкам"
+            />
+            <figcaption>Контроль привычек и визуализация прогресса.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/productivity-chart.jpg"
+              alt="Данные о продуктивности и аналитика"
+            />
+            <figcaption>
+              Аналитика, статус задач и точный обзор прогресса.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <footer>
+        Репозиторий демонстрирует профессиональный креативный дизайн, акценты и
+        галерею для подачи идеи продукта.
+      </footer>
+    </div>
+  </body>
 </html>
